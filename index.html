@@ -1,0 +1,72 @@
+<!-- <h1 id='tema'>Ruh Ordo</h1>
+<p id='text'>Welcome ro Ruh Ordo in Yssyk Kul</p>
+<img id='photo' src='ruhordo.jpg' height='400'>
+<br>
+<br>
+<button onclick="change()"> Next </button>
+<button onclick="ch()"> Back </button>
+<script>
+    function change() {
+        document.getElementById("photo").src = ' tashrabat.jpg ';
+        document.getElementById("tema").innerHTML = 'Tash Rabat ';
+        document.getElementById("text").innerHTML = 'Welcome to Tash Rabat ';
+        document.getElementById("text").style.color = 'blue ';
+        document.body.style.background = 'white ';
+    }
+</script>
+<script>
+    function ch() {
+        document.getElementById("photo").src = 'ruhordo.jpg ';
+        document.getElementById("tema").innerHTML = 'Ruh Ordo ';
+        document.getElementById("text").innerHTML = 'Welcome ro Ruh Ordo in Yssyk Kul ';
+        document.getElementById("text").style.color = 'blue ';
+        document.body.style.background = 'white ';
+    }
+</script>
+
+<h1 id='counter'>0</h1>
+<button onclick="plus()">Add person for reservation</button>
+<button onclick="minus()">Subtract person for reservation</button>
+<script>
+    var c = 0
+
+    function plus() {
+        c++;
+        document.getElementById("counter").innerHTML = c;
+    }
+</script>
+<script>
+    var c = 0
+
+    function minus() {
+        c--;
+        document.getElementById("counter").innerHTML = c;
+    }
+</script> -->
+
+
+
+
+<div id="multiply">
+    enter weight in kg: <input type="text" id="a" width=”30”><br> enter height in cm: <input type="text" id="b"><br> your result is:
+    <p id="result">0</p>you are:
+    <p id='fat'>wait!</p>
+    <button onclick="mult()">multiply!</button>
+</div>
+<script>
+    function mult() {
+        var x = document.getElementById("a").value;
+        var y = document.getElementById("b").value;
+        var res = x / y ** 2
+        document.getElementById("result").innerHTML = res;
+        if (res < 18.5) {
+            document.getElementById("fat").innerHTML = 'underweight'
+        } else if (res < 24.9) {
+            document.getElementById("fat").innerHTML = 'normal'
+        } else if (res < 29.9) {
+            document.getElementById("fat").innerHTML = 'overweight'
+        } else if (res > 29.9) {
+            document.getElementById("fat").innerHTML = 'Very overweiht'
+        }
+    }
+</script>
